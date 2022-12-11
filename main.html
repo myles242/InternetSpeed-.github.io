@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+       <h3>a</h3>
+        <div class="topnav">
+             
+            <a class="active" href="/index.html">About</a>
+            <a href="/main.html">Projects</a>
+            <a href="/chsrities.html">Donations</a>
+            
+        </div>
+    </header>
+    <section class="pro1">
+       <div>
+        <h2>Project 1 (Keystroke delays) </h2>         
+        <p>This projects aim is to show the affect of slow/low quality internet, on internet webpages when typing, and show how this can affect produtivity and asscablity. </p>
+       
+        <input type="text" id="inputBox" />
+
+        <p id="p"><em>EDIT THIS TEXT<em></p>
+<script>
+    // Get the value of the input box
+    
+    let box = document.getElementById("inputBox")
+    box.addEventListener("keyup", function() {
+    // Delay code execution by 3 seconds
+    let inputValue = document.getElementById("inputBox").value;
+    setTimeout(function() {
+      
+      let p = document.getElementById("p")
+      p.innerHTML = inputValue;
+      console.log(inputValue)
+    }, 3000)})
+</script>
+    
+    </section>
+   <section class="pro2">
+       <div class>
+        <h2>Project 2 (Image quality)</h2>
+        <p>The speed of your internet connection will have an effect on the quality of the pictures you view. A slow connection will take longer to download the picture and as a result, the picture quality may be lower than with a faster connection. Additionally, a slow connection will not be able to handle larger file sizes and resolutions, leading to lower picture quality.</p>
+        </div>
+         <div class="project2Img">
+           <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" id="imgchange">
+       <br>
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
+    <ul class="range-number">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+        <p>Value : <span id="rangevalue"></span></p>
+        </div>
+        </div>
+
+       
+
+    
+    </section>
+    
+     <section class="pro3">
+       <div>
+        <h2>Project 3 (Image quality) </h2>
+        <p>Regularly checking your image quality is an important part of ensuring that you are able to use the internet effectively. A slow internet connection can affect your ability to access and use online services and applications, and it can be frustrating to experience delays when loading web pages, streaming videos, or downloading files. Checking your internet speed can help you determine whether you are getting the performance you are paying for, and whether you need to upgrade your plan or switch to a different ISP. Additionally, checking your speed can help you diagnose and troubleshoot any problems with your connection, which can improve your internet experience and ensure that you are able to use the internet effectively.</p>
+        <button type="button" onclick="startTest()">Start Test</button>
+      </div>
+         <div class="area">
+
+        </div>
+
+
+</body>
+</html>
